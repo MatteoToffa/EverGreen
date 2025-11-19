@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: light; /* Aggiunto per prevenire inversione Dark Mode */
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     background-color: var(--background-light);
     color: var(--text-dark);
     line-height: 1.6;
+    color-scheme: light; /* Aggiunto per prevenire inversione Dark Mode */
 }
 
 body.modal-open {
@@ -94,7 +96,7 @@ body.modal-open {
 
 /* --- NAVBAR --- */
 .navbar {
-    /* CORREZIONE: Rimosso rgba() e backdrop-filter per sfondo bianco solido su tutti i dispositivi. */
+    /* CORREZIONE PRECEDENTE: sfondo bianco solido su tutti i dispositivi. */
     background-color: var(--background-white); 
     backdrop-filter: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -360,7 +362,6 @@ body.modal-open {
 }
 
 /* --- FOOTER --- */
-/* NESSUNA MODIFICA: Mantenuto lo sfondo scuro come richiesto. */
 .footer {
     background-color: var(--footer-bg);
     color: var(--text-light);
@@ -557,7 +558,6 @@ body.modal-open {
 }
 
 @media (max-width: 767px) {
-    /* Manteniamo le stesse regole sul mobile per coerenza: navbar bianca solida */
     .navbar {
         background-color: var(--background-white); 
         backdrop-filter: none; 
