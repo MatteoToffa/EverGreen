@@ -1,10 +1,83 @@
-<section id="lavori" class="section section-light">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EverGreen Giardinaggio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/favicon.png"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <img src="./assets/logo orizzontale.png" alt="Logo EverGreen" class="logo-img">
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#servizi" class="nav-link">Servizi</a>
+                <a href="#lavori" class="nav-link">Lavori</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+                <a href="#" class="btn btn-nav open-modal-btn">Richiedi Preventivo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="home" class="header">
+            <div class="header-overlay"></div>
+            <div class="container header-content">
+                <h1 class="header-title">Il Tuo Giardino, la Nostra Passione</h1>
+                <p class="header-subtitle">Trasformiamo il tuo spazio verde in un'oasi di pace e bellezza.</p>
+                <a href="#" class="btn btn-header open-modal-btn">Richiedi Preventivo</a>
+            </div>
+        </header>
+
+        <section id="servizi" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">I Nostri Servizi</h2>
+                    <p class="section-description">Dalla progettazione alla manutenzione, ci prendiamo cura del tuo verde a 360 gradi.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="./assets/images/progettazione.jpg" alt="Progettazione Giardini" class="service-card-img">
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Progettazione Giardini</h3>
+                            <p class="service-card-text">Creiamo giardini su misura, unendo estetica e funzionalità per realizzare lo spazio verde dei tuoi sogni.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="./assets/images/manutenzione.jpg" alt="Manutenzione Aree Verdi" class="service-card-img">
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Manutenzione Aree Verdi</h3>
+                            <p class="service-card-text">Offriamo un servizio completo di manutenzione per giardini, parchi e aree verdi, garantendo sempre un aspetto curato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lavori" class="section section-light">
             <div class="container text-center">
                 <div class="section-header">
                     <h2 class="section-title">I Nostri Lavori</h2>
                     <p class="section-description">Scopri la trasformazione che possiamo portare nel tuo giardino. Ecco alcuni esempi dei nostri interventi.</p>
                 </div>
                 <div class="lavori-grid">
+                    
                     <div class="lavoro-item">
                         <h3>Arte topiaria</h3>
                         <div class="lavoro-images">
@@ -19,7 +92,7 @@
                             <div class="lavoro-img-container">
                                 <img src="./assets/images/potatura alberi.jpg" alt="Albero potato" class="lavoro-img">
                             </div>
-                        </div>
+                            </div>
                     </div>
                     <div class="lavoro-item">
                         <h3>Potatura Siepi</h3>
@@ -51,3 +124,132 @@
                 </div>
             </div>
         </section>
+
+
+        <section id="contatti" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contattaci</h2>
+                    <p class="section-description">Hai un progetto in mente o hai bisogno di una consulenza? Scrivici o chiamaci per un preventivo gratuito. Siamo a tua disposizione.</p>
+                </div>
+                <div class="contact-content-wrapper">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3 class="contact-title">Telefono</h3>
+                            <a href="tel:+391234567890" class="contact-link">+39 123 456 7890</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">Email</h3>
+                            <a href="mailto:info@verdevivo.it" class="contact-link">info@verdevivo.it</a>
+                        </div>
+                       <a href="#" class="btn btn-contact open-modal-btn">Preventivo Gratuito</a>
+                    </div>
+                    <div class="contact-map">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42854.111783435874!2d11.74872263571845!3d45.06947454369857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477efa0f463a19c3%3A0x6aea1fc6d6505904!2s45100%20Rovigo%20RO!5e1!3m2!1sit!2sit!4v1763129584131!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="#home" class="logo">
+                    <img src="./assets/logo orizzontale con logo bianco.png" alt="Logo EverGreen" class="logo-img">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#servizi" class="footer-link">Servizi</a>
+                <a href="#lavori" class="footer-link">Lavori</a>
+                <a href="#contatti" class="footer-link">Contatti</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EverGreen Giardinaggio. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <div id="preventivo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Richiedi un Preventivo Gratuito</h2>
+            <p>Compila il form qui sotto e verrai ricontattato al più presto.</p>
+            <form id="preventivo-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="cognome">Cognome *</label>
+                    <input type="text" id="cognome" name="cognome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Numero di Telefono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="consenso" name="consenso" required>
+                    <label for="consenso">Acconsento ad essere ricontattato per la mia richiesta.</label>
+                </div>
+                <button type="submit" class="btn btn-form-submit">Invia Richiesta</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get modal elements
+            const modal = document.getElementById('preventivo-modal');
+            const openModalBtns = document.querySelectorAll('.open-modal-btn');
+            const closeModalBtn = document.querySelector('.close-btn');
+
+            // Function to open the modal
+            const openModal = () => {
+                document.body.classList.add('modal-open');
+                modal.style.display = 'flex';
+            };
+
+            // Function to close the modal
+            const closeModal = () => {
+                document.body.classList.remove('modal-open');
+                modal.style.display = 'none';
+            };
+
+            // Add event listeners to all open buttons
+            openModalBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal();
+                });
+            });
+
+            // Add event listener to close button
+            closeModalBtn.addEventListener('click', closeModal);
+
+            // Add event listener to close modal when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Add event listener to close modal with Escape key
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.style.display === 'flex') {
+                    closeModal();
+                }
+            });
+            
+            // The form submission is now handled by Formspree via the 'action' attribute in the HTML form tag.
+            // The previous JavaScript submission handler has been removed.
+        });
+    </script>
+</body>
+
+</html>
