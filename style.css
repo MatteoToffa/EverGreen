@@ -94,7 +94,7 @@ body.modal-open {
 
 /* --- NAVBAR --- */
 .navbar {
-    /* Manteniamo l'effetto blur e l'opacità solo per il desktop */
+    /* RIPRISTINATO: Versione originale con trasparenza e blur per desktop */
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -556,17 +556,10 @@ body.modal-open {
 }
 
 @media (max-width: 767px) {
-    /* 1. Forza la navbar principale a essere completamente bianca su mobile */
-    .navbar {
-        background-color: var(--background-white); /* Bianco solido */
-        backdrop-filter: none; /* Rimuovi il blur */
-    }
-    
     .nav-menu {
         display: none;
         flex-direction: column;
         width: 100%;
-        /* 2. Assicurati che il background del menu sia bianco solido senza ereditare l'opacità */
         background-color: var(--background-white); 
         position: absolute;
         top: 100%;
