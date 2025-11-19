@@ -94,7 +94,7 @@ body.modal-open {
 
 /* --- NAVBAR --- */
 .navbar {
-    /* RIPRISTINATO: Versione originale con trasparenza e blur per desktop */
+    /* Ripristinato: Trasparenza per desktop */
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -146,6 +146,7 @@ body.modal-open {
     display: none;
 }
 .hamburger {
+    /* Nascosto di default per desktop */
     display: none;
     cursor: pointer;
     flex-direction: column;
@@ -556,6 +557,12 @@ body.modal-open {
 }
 
 @media (max-width: 767px) {
+    /* Navbar senza trasparenza/blur su mobile */
+    .navbar {
+        background-color: var(--background-white); 
+        backdrop-filter: none; 
+    }
+    
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -576,6 +583,8 @@ body.modal-open {
         width: calc(100% - 2rem);
         margin: 0.5rem 1rem;
     }
+    
+    /* CORREZIONE: Questo fa apparire l'hamburger menu su mobile */
     .hamburger {
         display: flex;
     }
