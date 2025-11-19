@@ -94,9 +94,9 @@ body.modal-open {
 
 /* --- NAVBAR --- */
 .navbar {
-    /* Ripristinato: Trasparenza per desktop */
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    /* CORREZIONE: Rimosso rgba() e backdrop-filter per sfondo bianco solido su tutti i dispositivi. */
+    background-color: var(--background-white); 
+    backdrop-filter: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -146,7 +146,6 @@ body.modal-open {
     display: none;
 }
 .hamburger {
-    /* Nascosto di default per desktop */
     display: none;
     cursor: pointer;
     flex-direction: column;
@@ -361,6 +360,7 @@ body.modal-open {
 }
 
 /* --- FOOTER --- */
+/* NESSUNA MODIFICA: Mantenuto lo sfondo scuro come richiesto. */
 .footer {
     background-color: var(--footer-bg);
     color: var(--text-light);
@@ -557,7 +557,7 @@ body.modal-open {
 }
 
 @media (max-width: 767px) {
-    /* Navbar senza trasparenza/blur su mobile */
+    /* Manteniamo le stesse regole sul mobile per coerenza: navbar bianca solida */
     .navbar {
         background-color: var(--background-white); 
         backdrop-filter: none; 
@@ -583,8 +583,6 @@ body.modal-open {
         width: calc(100% - 2rem);
         margin: 0.5rem 1rem;
     }
-    
-    /* CORREZIONE: Questo fa apparire l'hamburger menu su mobile */
     .hamburger {
         display: flex;
     }
